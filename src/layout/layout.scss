@@ -1,0 +1,13 @@
+.layout {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100vw;
+  margin-top: 64px;
+  .pageWrapper {
+    flex: 6;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: calc(100% - 200px);
+  }
+}

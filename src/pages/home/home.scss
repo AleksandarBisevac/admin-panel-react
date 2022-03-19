@@ -1,8 +1,6 @@
 .home {
-  display: flex;
-  flex-direction: row;
   width: 100%;
-  max-width: 100vw;
+  display: flex;
   .homeWrapper {
     flex: 6;
     overflow-x: hidden;

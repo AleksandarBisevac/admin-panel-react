@@ -1,17 +1,14 @@
 import Chart from "../../components/chart/Chart";
 import Featured from "../../components/featured/Featured";
 import List from "../../components/list/List";
-import Navbar from "../../components/navbar/Navbar";
-import Sidebar from "../../components/sidebar/Sidebar";
+
 import Widget from "../../components/widget/Widget";
 import "./home.scss";
 
 const Home = () => {
   return (
     <div className="home">
-      <Sidebar />
       <div className="homeWrapper">
-        <Navbar />
         <div className="widgets">
           <Widget type="users" />
           <Widget type="orders" />
