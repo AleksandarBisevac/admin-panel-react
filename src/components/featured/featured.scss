@@ -1,0 +1,72 @@
+.featured {
+  flex: 2;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--grey-500);
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    .featuredChart {
+      width: 125px;
+      height: 125px;
+      margin: 0 auto;
+    }
+    .title {
+      text-align: center;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      text-decoration: underline;
+      text-decoration-thickness: 0.25rem;
+      text-underline-offset: 5px;
+      -moz-text-decoration-color: var(--primary-700);
+      text-decoration-color: var(--primary-700);
+      padding-bottom: 0.5rem;
+    }
+    .amount {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--green-700);
+    }
+    .description {
+      text-indent: 1rem;
+    }
+    .summery {
+      margin-top: 2rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .item {
+        text-align: center;
+        .itemTitle {
+          font-size: 1rem;
+          color: var(--grey-500);
+          font-weight: bold;
+          text-transform: capitalize;
+        }
+        .itemResult {
+          display: flex;
+          align-items: center;
+          margin-top: 0.5rem;
+          &.positive {
+            color: var(--green-700);
+          }
+          &.negative {
+            color: var(--red-600);
+          }
+        }
+      }
+    }
+  }
+}
