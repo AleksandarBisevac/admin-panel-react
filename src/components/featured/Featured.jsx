@@ -1,4 +1,4 @@
-import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
+import { CircularProgressbar } from "react-circular-progressbar";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
