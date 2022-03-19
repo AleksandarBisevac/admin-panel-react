@@ -1,3 +1,18 @@
 .chart {
-  flex: 3;
+  flex: 4;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--grey-500);
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: capitalize;
+    user-select: none;
+  }
+  .chartGrid {
+    stroke: var(--grey-100);
+  }
 }
