@@ -1,0 +1,11 @@
+$shadows: 2px 4px 10px 1px rgba(201, 201, 201, 0.45);
+
+body {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.cardBoxShadow {
+  @include box-shadow($shadows);
+}

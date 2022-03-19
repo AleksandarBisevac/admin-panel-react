@@ -4,8 +4,6 @@
   height: 100px;
   padding: 0.5rem;
   justify-content: space-between;
-  -webkit-box-shadow: 8px 9px 10px 1px rgba(0, 0, 0, 0.45);
-  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.45);
   border-radius: 10px;
   .left,
   .right {
@@ -18,6 +16,7 @@
       font-weight: bold;
       font-size: 0.8rem;
       color: var(--grey-400);
+      user-select: none;
     }
     .counter {
       font-size: 1.75rem;
@@ -39,11 +38,12 @@
       display: flex;
       align-items: center;
       font-size: 1rem;
+      font-weight: bold;
       &.positive {
         color: var(--green-700);
       }
       &.negative {
-        color: var(--red-light);
+        color: var(--red-600);
       }
     }
 

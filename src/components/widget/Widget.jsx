@@ -12,7 +12,7 @@ const Widget = ({ type }) => {
   let diff = 20;
 
   return widget ? (
-    <div className="widget">
+    <div className="widget cardBoxShadow">
       <div className="left">
         <span className="title">{widget.title}</span>
         <span className="counter">
