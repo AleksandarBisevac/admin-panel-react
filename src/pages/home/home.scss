@@ -3,5 +3,10 @@
   flex-direction: row;
   .homeWrapper {
     flex: 6;
+    .widgets {
+      display: flex;
+      padding: 1.5rem;
+      gap: 1rem;
+    }
   }
 }
