@@ -1,8 +1,11 @@
 .home {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  max-width: 100vw;
   .homeWrapper {
     flex: 6;
+    overflow-x: hidden;
     .widgets,
     .charts {
       display: flex;

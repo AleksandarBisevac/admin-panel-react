@@ -1,5 +1,6 @@
 import Chart from "../../components/chart/Chart";
 import Featured from "../../components/featured/Featured";
+import List from "../../components/list/List";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Widget from "../../components/widget/Widget";
@@ -21,6 +22,7 @@ const Home = () => {
           <Featured />
           <Chart />
         </div>
+        <List />
       </div>
     </div>
   );
