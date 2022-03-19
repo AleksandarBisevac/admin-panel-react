@@ -28,7 +28,7 @@ const Chart = () => {
         <h2 className="title">last 6 months Revenue</h2>
         <MoreVertIcon className="icon" />
       </header>
-      <ResponsiveContainer width="100%" aspect={3 / 2}>
+      <ResponsiveContainer width="100%" aspect={7 / 3}>
         <AreaChart
           data={data}
           margin={{ top: 10, right: 30, left: 30, bottom: 5 }}
