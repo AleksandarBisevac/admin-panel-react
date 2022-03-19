@@ -39,11 +39,12 @@
       display: flex;
       align-items: center;
       font-size: 1rem;
+      font-weight: bold;
       &.positive {
         color: var(--green-700);
       }
       &.negative {
-        color: var(--red-light);
+        color: var(--red-500);
       }
     }
 
