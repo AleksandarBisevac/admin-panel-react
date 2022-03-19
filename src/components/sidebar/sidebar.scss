@@ -12,6 +12,7 @@
       font-size: 1.4rem;
       font-weight: bold;
       color: var(--primary-700);
+      user-select: none;
     }
   }
   hr {
@@ -34,6 +35,7 @@
         }
         span {
           color: var(--grey-700);
+          user-select: none;
         }
 
         &:hover {
@@ -58,6 +60,7 @@
         margin: 1rem 1rem 0.25rem;
         color: var(--primary-400);
         text-transform: uppercase;
+        user-select: none;
       }
     }
   }

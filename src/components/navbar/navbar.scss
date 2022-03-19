@@ -48,6 +48,7 @@
         display: flex;
         align-items: center;
         margin: 0 0.5rem;
+        user-select: none;
         .icon {
           font-size: 24px;
           color: var(--primary-700);
