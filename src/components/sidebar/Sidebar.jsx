@@ -1,4 +1,4 @@
-import "./sidebar.scss";
+import { useNavigate } from "react-router-dom";
 import GroupIcon from "@mui/icons-material/Group";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
@@ -11,8 +11,10 @@ import SettingsSystemDaydreamIcon from "@mui/icons-material/SettingsSystemDaydre
 import BookIcon from "@mui/icons-material/Book";
 import SettingsIcon from "@mui/icons-material/Settings";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import "./sidebar.scss";
 
 const Sidebar = () => {
+  const navigate = useNavigate();
   return (
     <div className="sidebar">
       <div className="wrapper">
@@ -27,7 +29,7 @@ const Sidebar = () => {
               <span>Dashboard</span>
             </li>
             <h4 className="categoryTitle">lists</h4>
-            <li>
+            <li onClick={() => navigate("/users")}>
               <GroupIcon className="icon" />
               <span>Users</span>
             </li>
