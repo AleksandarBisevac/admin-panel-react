@@ -8,6 +8,7 @@ import {
   ListOutlined,
   NotificationAddOutlined,
 } from "@mui/icons-material";
+import profileImg from "../../assets/images/profile.png";
 
 const Navbar = () => {
   return (
@@ -39,11 +40,7 @@ const Navbar = () => {
             <ListOutlined className="icon" />
           </div>
           <div className="item">
-            <img
-              src="https://www.w3schools.com/howto/img_avatar.png"
-              alt="user profile"
-              className="avatar"
-            />
+            <img src={profileImg} alt="user profile" className="avatar" />
           </div>
         </div>
       </div>
