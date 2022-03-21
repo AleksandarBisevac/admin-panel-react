@@ -33,7 +33,7 @@ const Sidebar = () => {
               <GroupIcon className="icon" />
               <span>Users</span>
             </li>
-            <li>
+            <li onClick={() => navigate("/products")}>
               <StoreIcon className="icon" />
               <span>Products</span>
             </li>
