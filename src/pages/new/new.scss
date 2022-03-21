@@ -1,0 +1,122 @@
+.createNew {
+  width: 100%;
+  .top {
+    .title {
+      color: var(--primary-500);
+      font-size: 1.5rem;
+      text-transform: capitalize;
+    }
+  }
+  .top,
+  .bottom {
+    padding: 1rem;
+    margin: 1.5rem;
+  }
+  .bottom {
+    display: flex;
+    gap: 1rem;
+    .left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        background-color: var(--primary-100);
+        min-width: 125px;
+        max-width: 200px;
+        aspect-ratio: 1 /1;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .right {
+      flex: 2;
+      form {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1.5rem;
+        padding-bottom: 4rem;
+        label {
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          margin-bottom: 0.25rem;
+        }
+        input {
+          padding: 5px;
+          border: none;
+          font-size: 1rem;
+          border-bottom: 1.5px solid var(--primary-400);
+          outline: none;
+        }
+        .formInput {
+          display: flex;
+          flex-direction: column;
+          width: 40%;
+          .inputField {
+            display: flex;
+            align-items: center;
+            border-bottom: 1.5px solid var(--primary-400);
+            input {
+              border-bottom: none;
+            }
+            span {
+              height: 102%;
+              padding: 5px;
+              background-color: var(--primary-400);
+              display: flex;
+              justify-content: center;
+              align-self: center;
+              .inputIcon {
+                color: var(--grey-50);
+              }
+            }
+          }
+          .labelUpload {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 0.7rem;
+            cursor: pointer;
+            &:hover {
+              span {
+                color: var(--primary-700);
+                transition: all 300ms ease;
+              }
+              .icon {
+                color: var(--primary-700);
+                transition: all 300ms ease;
+              }
+            }
+          }
+          .icon {
+            height: 40px;
+            width: 40px;
+            color: var(--primary-400);
+          }
+        }
+        button {
+          width: 100px;
+          background-color: var(--primary-400);
+          padding: 0.7rem 0;
+          font-size: 1.2rem;
+          color: var(--grey-50);
+          border-radius: 0 15px 0 15px;
+          margin-top: 1rem;
+          border: 1px solid transparent;
+          position: absolute;
+          bottom: 0;
+          right: 1.5rem;
+          &:hover {
+            border: 1px solid var(--primary-400);
+            background-color: var(--grey-50);
+            color: var(--primary-400);
+            transition: all 300ms linear;
+          }
+        }
+      }
+    }
+  }
+}
