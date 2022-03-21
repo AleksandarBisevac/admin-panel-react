@@ -7,7 +7,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-const List = () => {
+const List = ({ title }) => {
   const rows = [
     {
       id: 1143155,
@@ -62,9 +62,9 @@ const List = () => {
   ];
 
   return (
-    <div className="list cardBoxShadow">
+    <div className="list">
       <header className="top">
-        <h2 className="title">List of transactions</h2>
+        <h2 className="title">{title}</h2>
       </header>
       <TableContainer component={Paper} className="table">
         <Table aria-label="simple table">

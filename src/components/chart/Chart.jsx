@@ -21,14 +21,14 @@ const data = [
   { name: "June", Total: 24774.54 },
 ];
 
-const Chart = () => {
+const Chart = ({ aspect, title }) => {
   return (
     <div className="chart cardBoxShadow">
       <header className="top">
-        <h2 className="title">last 6 months Revenue</h2>
+        <h2 className="title">{title}</h2>
         <MoreVertIcon className="icon" />
       </header>
-      <ResponsiveContainer width="100%" aspect={7 / 3}>
+      <ResponsiveContainer width="100%" aspect={aspect}>
         <AreaChart
           data={data}
           margin={{ top: 10, right: 30, left: 30, bottom: 5 }}
