@@ -17,9 +17,11 @@ const Home = () => {
         </div>
         <div className="charts">
           <Featured />
-          <Chart />
+          <Chart title="Revenue (last 6 months) " aspect={7 / 3} />
         </div>
-        <List />
+        <div className="listWrapper cardBoxShadow">
+          <List title="list of transactions" />
+        </div>
       </div>
     </div>
   );

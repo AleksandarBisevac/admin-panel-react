@@ -24,7 +24,7 @@ const Sidebar = () => {
         <div className="center">
           <ul>
             <h4 className="categoryTitle">main</h4>
-            <li>
+            <li onClick={() => navigate("/")}>
               <DashboardIcon className="icon" />
               <span>Dashboard</span>
             </li>
