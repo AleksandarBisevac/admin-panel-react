@@ -1,0 +1,40 @@
+.login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    input {
+        width: 200px;
+        height: 2rem;
+        padding: 1rem 0;
+        &::placeholder {
+            padding-left: 1rem;
+        }
+    }
+    button {
+        width: 200px;
+        min-height: 2rem;
+        background-color: var(--primary-400);
+        color: var(--grey-100);
+        font-size: 1rem;
+        padding: 0.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:active {
+            background-color: var(--grey-100);
+            color: var(--primary-400);
+        }
+    }
+    p {
+        font-size: 0.9rem;
+        color: var(--red-500);
+    }
+}

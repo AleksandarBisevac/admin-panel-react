@@ -6,11 +6,14 @@
     flex: 6;
     .top {
       display: flex;
-      gap: 1rem;
+      gap: 4rem;
       .left {
         padding: 1rem;
         flex: 1;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         border-top-right-radius: 5px;
         .editButton {
           position: absolute;
@@ -35,10 +38,13 @@
           font-size: 1.5rem;
           text-transform: capitalize;
           user-select: none;
-          margin-bottom: 1.5rem;
+          margin-bottom: 2rem;
         }
         .item {
           display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          height: 100%;
           gap: 1rem;
           .itemImg {
             width: 100px;
@@ -60,11 +66,11 @@
               gap: 0px 18px;
               margin-bottom: 0.5rem;
               font-size: 1rem;
-              gap: 0.5rem;
+              gap: 1rem;
               .itemKey {
                 font-weight: bold;
                 color: var(--grey-500);
-                text-align: start;
+                text-align: end;
               }
               .itemValue {
                 font-weight: 300;
